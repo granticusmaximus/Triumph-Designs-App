@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Triumph.Web.Data;
 
 namespace Triumph.Web.Migrations
 {
     [DbContext(typeof(TriumphDbContext))]
-    partial class TriumphDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181218022400_Todos")]
+    partial class Todos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +72,7 @@ namespace Triumph.Web.Migrations
                     b.ToTable("Posts");
                 });
 
-            modelBuilder.Entity("Triumph.Web.Entities.Todo", b =>
+            modelBuilder.Entity("Triumph.Web.Entities.Todos", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -85,7 +87,7 @@ namespace Triumph.Web.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Todos");
+                    b.ToTable("Todo");
                 });
 
             modelBuilder.Entity("Triumph.Web.Entities.Post", b =>

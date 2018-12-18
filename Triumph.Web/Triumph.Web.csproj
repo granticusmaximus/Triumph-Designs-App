@@ -17,4 +17,8 @@
     <Folder Include="Entities\" />
     <Folder Include="Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Services\ITodoItemService.cs" />
+    <Compile Remove="Entities\TodoItem.cs" />
+  </ItemGroup>
 </Project>

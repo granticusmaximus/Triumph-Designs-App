@@ -11,7 +11,9 @@ namespace Triumph.Web.Entities
         public string BusinessName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         [Display(Name = "Business ID")]

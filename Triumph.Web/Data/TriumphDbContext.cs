@@ -13,5 +13,6 @@ namespace Triumph.Web.Data
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Todo> Todos { get; set; }
     }
 }
