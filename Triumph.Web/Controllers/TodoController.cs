@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Triumph.Web.Data;
+using Triumph.Web.Areas.Identity.Data;
 using Triumph.Web.Entities;
 
 namespace Triumph.Web.Controllers
 {
     public class TodoController : Controller
     {
-        private readonly TriumphDbContext _context;
+        private readonly IdentityDataContext _context;
 
-        public TodoController(TriumphDbContext context)
+        public TodoController(IdentityDataContext context)
         {
             _context = context;
         }

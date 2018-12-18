@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Triumph.Web.Data;
+using Triumph.Web.Areas.Identity.Data;
 
 namespace Triumph.Web.Migrations
 {
-    [DbContext(typeof(TriumphDbContext))]
+    [DbContext(typeof(IdentityDataContext))]
     [Migration("20181218000934_InitialCreate")]
     partial class InitialCreate
     {
