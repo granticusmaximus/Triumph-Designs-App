@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Triumph.Web.Areas.Identity.Data;
+using Triumph.Web.Data;
 using Triumph.Web.Entities;
 
 namespace Triumph.Web.Controllers
 {
     public class BlogsController : Controller
     {
-        private readonly IdentityDataContext _context;
+        private readonly TriumphDbContext _context;
 
-        public BlogsController(IdentityDataContext context)
+        public BlogsController(TriumphDbContext context)
         {
             _context = context;
         }

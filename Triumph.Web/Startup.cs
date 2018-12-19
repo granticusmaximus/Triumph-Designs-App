@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Triumph.Web.Areas.Identity.Data;
+using Triumph.Web.Data;
 
 namespace Triumph.Web
 {
@@ -37,7 +37,7 @@ namespace Triumph.Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             var connection = "Data Source=triumph.db";
-            services.AddDbContext<IdentityDataContext>
+            services.AddDbContext<TriumphDbContext>
                 (options => options.UseSqlite(connection));
         }
 

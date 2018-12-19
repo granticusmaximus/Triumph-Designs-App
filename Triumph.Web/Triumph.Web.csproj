@@ -15,10 +15,11 @@
 
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Services\ITodoItemService.cs" />
     <Compile Remove="Entities\TodoItem.cs" />
-    <Compile Remove="Data\TriumphDbContext.cs" />
+    <Compile Remove="Areas\Identity\Data\IdentityDataContext.cs" />
   </ItemGroup>
 </Project>

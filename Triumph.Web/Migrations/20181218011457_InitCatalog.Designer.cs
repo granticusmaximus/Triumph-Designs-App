@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Triumph.Web.Areas.Identity.Data;
+using Triumph.Web.Data;
 
 namespace Triumph.Web.Migrations
 {
-    [DbContext(typeof(IdentityDataContext))]
+    [DbContext(typeof(TriumphDbContext))]
     [Migration("20181218011457_InitCatalog")]
     partial class InitCatalog
     {

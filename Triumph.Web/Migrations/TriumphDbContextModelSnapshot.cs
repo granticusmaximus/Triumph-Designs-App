@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Triumph.Web.Areas.Identity.Data;
+using Triumph.Web.Data;
 
 namespace Triumph.Web.Migrations
 {
-    [DbContext(typeof(IdentityDataContext))]
+    [DbContext(typeof(TriumphDbContext))]
     partial class TriumphDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
