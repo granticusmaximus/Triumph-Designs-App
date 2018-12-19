@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Triumph.Web.Data;
 
 namespace Triumph.Web.Migrations
 {
     [DbContext(typeof(TriumphDbContext))]
-    partial class TriumphDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181219144151_EmployeeMigration")]
+    partial class EmployeeMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,7 +75,7 @@ namespace Triumph.Web.Migrations
 
                     b.HasKey("EmpID");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("Triumph.Web.Entities.Post", b =>

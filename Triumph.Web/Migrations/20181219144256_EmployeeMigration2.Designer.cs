@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Triumph.Web.Data;
 
 namespace Triumph.Web.Migrations
 {
     [DbContext(typeof(TriumphDbContext))]
-    partial class TriumphDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181219144256_EmployeeMigration2")]
+    partial class EmployeeMigration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

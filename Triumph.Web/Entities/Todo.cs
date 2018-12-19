@@ -8,5 +8,7 @@ namespace Triumph.Web.Entities
         public DateTime DueDate { get; set; }
         public string Attributes { get; set; }
         public string Priority { get; set; }
+        public Client AssignedClientID { get; set; }
+        public Employees AssignedEmpID { get; set; }
     }
 }

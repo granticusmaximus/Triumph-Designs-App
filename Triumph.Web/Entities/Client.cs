@@ -25,6 +25,9 @@ namespace Triumph.Web.Entities
             get { return (FirstName + " " + LastName); }
         }
 
+        [Display(Name = "Assigned Too")]
+        public Employees Assigned { get; set; }
+
         public string Notes { get; set; }
     }
 }
